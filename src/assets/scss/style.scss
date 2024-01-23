@@ -1,0 +1,140 @@
+/*!
+ * Bootstrap v4.6.2 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+@import 'root';
+@import 'reboot';
+@import 'type';
+@import 'images';
+@import 'code';
+@import 'grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+@import 'transitions';
+@import 'dropdown';
+@import 'button-group';
+@import 'input-group';
+@import 'custom-forms';
+@import 'nav';
+@import 'navbar';
+@import 'card';
+@import 'breadcrumb';
+@import 'pagination';
+@import 'badge';
+@import 'jumbotron';
+@import 'alert';
+@import 'progress';
+@import 'media';
+@import 'list-group';
+@import 'close';
+@import 'toasts';
+@import 'modal';
+@import 'tooltip';
+@import 'popover';
+@import 'carousel';
+@import 'spinners';
+@import 'utilities';
+@import 'print';
+
+@font-face {
+  font-family: 'SFPD-Regular';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPD-Medium';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPD-SemiBold';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_semibold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPD-Bold';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_bold.ttf) format('truetype');
+}
+
+button {
+  &.btn {
+    &.btn-primary {
+      margin-left: 8px;
+      background-color: $primary;
+      border-color: $primary;
+      &:hover {
+        background-color: darken($primary, 10%);
+        box-shadow: 0 0 0 0.2rem darken($primary, 0.5);
+      }
+    }
+  }
+}
+
+header {
+  width: 100%;
+  z-index: 1000;
+  background-color: $white;
+  font-family: 'SFPD-Regular';
+  font-size: 18px;
+
+  .container-fluid {
+    padding-left: 44px;
+    padding-right: 44px;
+
+    .container-logo {
+      padding-left: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      height: 64px;
+      max-width: 200px;
+      background-size: cover;
+
+      img {
+        width: 90%;
+        height: 100%;
+      }
+    }
+
+    ul.navbar-nav {
+      padding-left: 16px;
+      li.nav-item {
+        &.active {
+          a.nav-link {
+            font-family: 'SFPD-SemiBold';
+            color: $primary;
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+        a {
+          &.nav-link {
+            color: $black;
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-primary {
+      &:hover,
+      &:active:focus {
+        background-color: darken($primary, 10%);
+        box-shadow: 0 0 0 0.2rem darken($primary, 0.5);
+      }
+    }
+  }
+}
