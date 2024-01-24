@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'jquery/dist/jquery.min.js';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
+import PackagePage from './pages/PackagePage';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home" />}></Route>
         <Route path="/home" element={<LandingPage />}></Route>
+        <Route path="/packages" element={<PackagePage />}></Route>
       </Routes>
     </div>
   );
