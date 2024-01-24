@@ -69,21 +69,61 @@
 
 button {
   &.btn {
+    font-family: 'SFPD-Regular';
+
     &.btn-primary {
-      margin-left: 8px;
       background-color: $primary;
       border-color: $primary;
       &:hover {
         background-color: darken($primary, 10%);
-        box-shadow: 0 0 0 0.2rem darken($primary, 0.5);
+      }
+    }
+
+    &.btn-secondary {
+      background-color: $secondary;
+      border-color: $secondary;
+      &:hover {
+        background-color: darken($secondary, 10%);
       }
     }
   }
 }
 
+h1 {
+  font-family: 'SFPD-Bold';
+
+  &.light {
+    font-size: 40px;
+    color: $white;
+  }
+}
+
+h2 {
+  font-family: 'SFPD-Bold';
+
+  &.light {
+    font-size: 24px;
+    color: $white;
+  }
+}
+
+h3 {
+  font-family: 'SFPD-Regular';
+
+  &.disabled {
+    color: $light;
+    font-size: 20px;
+  }
+
+  &.light {
+    color: $white;
+    font-size: 20px;
+  }
+}
+
 header {
   width: 100%;
-  z-index: 1000;
+  // z-index: 1000;
   background-color: $white;
   font-family: 'SFPD-Regular';
   font-size: 18px;
@@ -91,6 +131,12 @@ header {
   .container-fluid {
     padding-left: 44px;
     padding-right: 44px;
+
+    nav {
+      background-color: $white !important;
+      padding-left: 44px;
+      padding-right: 44px;
+    }
 
     .container-logo {
       padding-left: 16px;
@@ -130,11 +176,31 @@ header {
     }
 
     .btn-primary {
+      margin-left: 8px;
+      margin-right: 16px;
+
       &:hover,
       &:active:focus {
         background-color: darken($primary, 10%);
         box-shadow: 0 0 0 0.2rem darken($primary, 0.5);
       }
     }
+  }
+}
+
+section {
+  margin-top: 80px;
+
+  &.container-hero {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
   }
 }

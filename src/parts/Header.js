@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header>
       <div className="container-fluid">
-        <nav className="navbar navbar-expand-lg navbar-light ">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
           <div className="container-logo">
             <a href="/home">
               <img src={logo} alt="Your Logo" height="30" />
