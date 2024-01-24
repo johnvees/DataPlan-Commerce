@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import ILBanner from '../../assets/images/landingBanner.png';
-import icBundling from '../../assets/images/icBundling.svg';
-import icCall from '../../assets/images/icCall.svg';
-import icMessage from '../../assets/images/icMessage.svg';
-import icNight from '../../assets/images/icNight.svg';
 
 export default function Content() {
   const [activeColumn, setActiveColumn] = useState(0);

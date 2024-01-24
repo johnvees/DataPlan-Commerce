@@ -5321,6 +5321,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"currency.js@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "currency.js@npm:2.0.4"
+  checksum: e7cd308a97c7b5d3413fa304542da62b7205a28144889b9b38f0fd203fe4d3c499a9541303fcbb6a9fac33a7ee39ab02d810c2c8f37cd5c69a7991adef638ba3
+  languageName: node
+  linkType: hard
+
 "damerau-levenshtein@npm:^1.0.8":
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8"
@@ -5337,6 +5344,7 @@ __metadata:
     "@testing-library/user-event": "npm:^13.5.0"
     axios: "npm:^1.6.5"
     bootstrap: "npm:^4.6.2"
+    currency.js: "npm:^2.0.4"
     jquery: "npm:^3.7.1"
     node-sass: "npm:^9.0.0"
     popper.js: "npm:^1.16.1"
